@@ -1,0 +1,31 @@
+<nb-layout>
+
+  <nb-layout-header class="nebular_header">
+
+    <div class="header_title">
+      <h2 routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Three60°</h2>
+    </div>
+
+    <div class="header_options">
+
+      <nb-icon icon = "people" [options]="{ animation: { type: 'pulse', infinite: 'true' }}"  routerLink="/users" routerLinkActive="active" ariaCurrentWhenActive="page"></nb-icon>
+
+      <nb-icon *ngIf="userLoggedIn" [nbContextMenu]="items" icon = "person" [options]="{ animation: { type: 'pulse', infinite: 'true' }}" nbContextMenuTrigger="hover" nbContextMenuTag="my-context-menu"></nb-icon>
+
+      <nb-icon *ngIf="!userLoggedIn" icon = "log-in" [options]="{ animation: { type: 'pulse', infinite: 'true' }}" (click)="logInUser()" ></nb-icon>
+
+    </div>
+
+  </nb-layout-header>
+
+  <nb-layout-column>
+
+    <router-outlet></router-outlet>
+
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+    <app-footer></app-footer>
+  </nb-layout-footer>
+
+</nb-layout>

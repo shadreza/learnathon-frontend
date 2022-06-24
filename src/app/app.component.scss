@@ -1,0 +1,23 @@
+.nebular_header {
+  justify-content: center;
+}
+
+.header_title {
+  width: 30%;
+}
+
+.header_title h3 {
+  cursor: pointer;
+}
+
+
+.header_options {
+  width: 70%;
+  text-align: right;
+}
+
+nb-icon {
+  width: 1.5rem;
+  margin: 1rem;
+  cursor: pointer;
+}
