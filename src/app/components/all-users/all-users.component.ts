@@ -22,7 +22,7 @@ export class AllUsersComponent implements OnInit {
 
   ngOnInit() {
     this.dataParams.page_num = 1;
-    this.dataParams.page_size = 5;
+    this.dataParams.page_size = 8;
     this.getAllHeroList();
   }
 

@@ -11,7 +11,8 @@ import {
   NbIconModule,
   NbContextMenuModule,
   NbMenuModule,
-  NbInputModule
+  NbInputModule,
+  NbButtonModule
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { FooterComponent } from './components/footer/footer.component';
@@ -45,7 +46,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     NbContextMenuModule,
     NbInputModule,
     ReactiveFormsModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    NbButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
