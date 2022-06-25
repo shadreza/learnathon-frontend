@@ -27,7 +27,13 @@
           </ngx-datatable-column>
       </ngx-datatable>
     </div>
-</div>-->
+</div>
+
+<div class="element-per-page">
+      <span>Elements Per Page</span>
+      <input type="number" [(ngModel)]="dataParams.page_size" nbInput fieldSize="tiny" [value]="dataParams.page_size"/>
+    </div> -->
+
 
 
 
@@ -66,7 +72,10 @@
       </ngx-datatable>
     </div>
 </div>
-
+<div class="element-per-page">
+  <span>Elements / Page</span>
+  <input (change)="elementsPerPageToggled()" type="number" [(ngModel)]="dataParams.page_size" nbInput fieldSize="tiny" [value]="dataParams.page_size"/>
+</div>
 
 
 <!-- <div class="card card-default">

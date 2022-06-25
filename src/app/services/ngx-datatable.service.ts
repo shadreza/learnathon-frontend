@@ -149,6 +149,13 @@ export class NgxDatatableService {
       'title_line2': 'A REAL THING',
       'type': 'FCF3',
       'order_number': 20
+      }, {
+      'id': '05fb32e7-9fae-4879-8379-d037937fdc24',
+      'status': 'ACTIVE',
+      'title_line1': 'MAKING FANTASY FOOTBALL',
+      'title_line2': 'A REAL THING',
+      'type': 'XXXX',
+      'order_number': 21
       }
     ];
 
