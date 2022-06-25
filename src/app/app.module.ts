@@ -12,7 +12,10 @@ import {
   NbContextMenuModule,
   NbMenuModule,
   NbInputModule,
-  NbButtonModule
+  NbButtonModule,
+  NbWindowModule,
+  NbCardModule,
+  NbDatepickerModule
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { FooterComponent } from './components/footer/footer.component';
@@ -22,6 +25,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserInfoComponent } from './pages/user-info/user-info.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { PopupWindowComponent } from './components/popup-window/popup-window.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,7 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     LoginComponent,
     RegisterComponent,
     UserInfoComponent,
+    PopupWindowComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,10 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     ReactiveFormsModule,
     NgxDatatableModule,
     NbButtonModule,
-    FormsModule
+    FormsModule,
+    NbWindowModule.forRoot(),
+    NbCardModule,
+    NbDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

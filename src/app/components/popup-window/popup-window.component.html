@@ -1,0 +1,9 @@
+<div class="edit-user-info">
+  <form [formGroup]="editUserFormGroup" (ngSubmit)="onSubmitEditUserForm()">
+    <input nbInput placeholder="email" formControlName="email" />
+    <input nbInput placeholder="Pick Date" formControlName="dob" [nbDatepicker]="picker">
+      <nb-datepicker #picker [max]="max"></nb-datepicker>
+      <br>
+    <button nbButton size="small"> Confirm Edit </button>
+  </form>
+</div>
