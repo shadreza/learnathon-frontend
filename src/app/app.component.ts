@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
 
   logOutUser() {
     this.userLoggedIn = false
-  alert('logout needs to be implemented')
+    alert('logout needs to be implemented')
 }
 
   logInUser() {

@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import { from, Observable } from 'rxjs';
-import { catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'

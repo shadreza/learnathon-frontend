@@ -26,6 +26,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { UserInfoComponent } from './pages/user-info/user-info.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { PopupWindowComponent } from './components/popup-window/popup-window.component';
+import { TalkWithApiHeartbeatComponent } from './pages/talk-with-api-heartbeat/talk-with-api-heartbeat.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { PopupWindowComponent } from './components/popup-window/popup-window.com
     RegisterComponent,
     UserInfoComponent,
     PopupWindowComponent,
+    TalkWithApiHeartbeatComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import { PopupWindowComponent } from './components/popup-window/popup-window.com
     FormsModule,
     NbWindowModule.forRoot(),
     NbCardModule,
-    NbDatepickerModule.forRoot()
+    NbDatepickerModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
